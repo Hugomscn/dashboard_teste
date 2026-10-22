@@ -22,11 +22,12 @@ const queryRows=id=>snapshot.queries[id].rows;
 const columnLabels={label:'Espécie / território',year:'Ano',tonnes:'Produção (t)',valueReais:'Valor nominal (R$)',productionShare:'Participação na produção',annualGrowth:'Variação anual',valuePerKg:'Valor médio (R$/kg)',municipality:'Município',uf:'Estado/UF',code:'Código IBGE',region:'Região',product:'Espécie',nationalShare:'Participação da produção no Brasil',regionalShare:'Participação da produção na região'};
 const formatCell=(key,value)=>key==='valueReais'?money(value):['productionShare','nationalShare','regionalShare'].includes(key)?percent(value):key==='annualGrowth'?signedPercent(value):['tonnes','valuePerKg'].includes(key)?number(value):String(value??'—');
 const currentFilters=()=>views[page];
+const embeddedMode=new URL(location.href).searchParams.get('embed')==='production';
 
 function readUrl(){
   const params=new URL(location.href).searchParams;
   const requested=params.get('pagina')??params.get('tab')??'overview';
-  page=['municipalities','products','themes','poles'].includes(requested)?'territory':Object.hasOwn(pages,requested)?requested:'overview';
+  page=embeddedMode?'territory':['municipalities','products','themes','poles'].includes(requested)?'territory':Object.hasOwn(pages,requested)?requested:'overview';
   let incoming={year:params.get('ano'),start:params.get('inicio'),end:params.get('fim'),region:params.get('regiao'),uf:params.get('uf'),product:params.get('especie')??params.get('produto')};
   // Accept links shared by the previous version; no browser storage migration is needed.
   if(params.has('t'))try{
@@ -43,7 +44,7 @@ function readUrl(){
   municipalityCode=params.get('municipio')??null;
 }
 function updateUrl(push=true){
-  const f=currentFilters(),url=new URL(location.href);url.search='';
+  const f=currentFilters(),url=new URL(location.href);url.search='';if(embeddedMode)url.searchParams.set('embed','production');
   Object.entries({pagina:page,ano:f.year,inicio:f.start,fim:f.end,...(f.region!=='all'?{regiao:f.region}:{}),...(f.product!=='all'?{especie:f.product}:{}),...(f.uf!=='all'?{uf:f.uf}:{}),...(page==='territory'?{nivel:level,medida:speciesMetric,tema:themeId,...(level==='poles'?{polo:poleId,...(municipalityCode?{municipio:municipalityCode}:{})}:{})}:{}),serie:seriesMode}).forEach(([key,value])=>url.searchParams.set(key,value));
   if(url.href!==location.href)window.history[push?'pushState':'replaceState']({},'',url);
 }
@@ -268,7 +269,9 @@ function render(){
   const measureControl=page==='territory'?`<div class="measure-switch" role="group" aria-label="Visualização">${[['tonnes','Produção (t)'],['valueReais','Valor (R$)']].map(([id,label])=>`<button type="button" id="measure-${id}" data-measure="${id}" aria-pressed="${speciesMetric===id}">${label}</button>`).join('')}</div>`:'';
   const filterBar=page==='methodology'?'':`<section class="filter-bar" aria-label="Filtros dos dados">${selectField('year','Ano',snapshot.metadata.years,year)}${!isPole?selectField('region','Região',regionChoices,f.region):''}${page==='territory'&&!isPole?selectField('uf','Estado/UF',stateChoices,f.uf):''}${!isPole?selectField('product','Espécie',[{value:'all',label:'Todas'},...snapshot.metadata.products],f.product):''}${measureControl}<button class="reset-button" data-action="reset">Limpar seleção</button></section>`;
   const viewContext=page==='methodology'?'':`<div class="view-context" aria-live="polite"><p>${isPole?'Polos cadastrados · Tilápia':`${e(f.region==='all'?'Brasil':f.region)}${f.uf!=='all'?' / '+e(f.uf):''} · ${e(f.product==='all'?'Todas as espécies disponíveis':f.product)}`} · Ano ${year}</p>${year===Math.max(...snapshot.metadata.years)?'<span class="preliminary">Resultado preliminar</span>':''}</div>`;
-  app.innerHTML=`<header class="site-header"><div class="header-main"><h1>${e(appTitle)}</h1><div class="header-tools"><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button><button class="icon-button" data-action="print" aria-label="Imprimir dashboard" title="Imprimir">⎙</button></div></div><nav aria-label="Páginas do dashboard">${Object.entries(pages).map(([id,label])=>`<button data-tab="${id}" ${id===page?'aria-current="page"':''}>${e(label)}</button>`).join('')}</nav>${filterBar}</header><main id="conteudo">${viewContext}<div class="page-content ${renderedPage!==null&&renderedPage!==page?'page-enter':''}">${body}</div><footer>Fonte: IBGE/SIDRA · Pesquisa da Pecuária Municipal <button data-action="sources">Fontes e metodologia</button></footer></main>`;
+  const embeddedHeader=embeddedMode?`<header class="site-header"><div class="embedded-heading"><h1>Exploração da produção</h1><div class="header-tools"><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button><button class="icon-button" data-action="print" aria-label="Imprimir exploração" title="Imprimir">⎙</button></div></div>${filterBar}</header>`:'';
+  const fullHeader=`<header class="site-header"><div class="header-main"><h1>${e(appTitle)}</h1><div class="header-tools"><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button><button class="icon-button" data-action="print" aria-label="Imprimir dashboard" title="Imprimir">⎙</button></div></div><nav aria-label="Páginas do dashboard">${Object.entries(pages).map(([id,label])=>`<button data-tab="${id}" ${id===page?'aria-current="page"':''}>${e(label)}</button>`).join('')}</nav>${filterBar}</header>`;
+  app.innerHTML=`${embeddedMode?embeddedHeader:fullHeader}<main id="conteudo">${viewContext}<div class="page-content ${!embeddedMode&&renderedPage!==null&&renderedPage!==page?'page-enter':''}">${body}</div><footer>Fonte: IBGE/SIDRA · Pesquisa da Pecuária Municipal <button data-action="sources">Fontes e metodologia</button></footer></main>`;
   document.documentElement.style.setProperty('--header-height',app.querySelector('.site-header').offsetHeight+'px');
   renderedPage=page;renderedRange=rangeKey;
   charts.forEach(draw=>draw());if(previousCharts)animateTemporalCharts(app,previousCharts);bindYearRange(app,patch=>setFilters(patch));

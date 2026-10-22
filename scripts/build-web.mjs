@@ -18,7 +18,6 @@ data.queries.poleProduction={...source.queries.municipalities,rows:source.querie
 await mkdir(join(output,'assets'),{recursive:true});
 await mkdir(join(output,'data'),{recursive:true});
 await copyFile(join(root,'web/index.html'),join(output,'index.html'));
-await copyFile(join(root,'web/IMPLANTACAO.md'),join(output,'IMPLANTACAO.md'));
 const files=(await readdir(join(root,'web/src'))).filter(file=>/\.(js|css)$/.test(file));
 const hashes={};
 for(const file of files) {
@@ -42,7 +41,7 @@ for(const [id,query] of Object.entries(data.queries)){
 }
 await writeFile(join(output,'data/catalog.json'),JSON.stringify(catalog));
 hashes['data/catalog.json']=createHash('sha256').update(JSON.stringify(catalog)).digest('hex');
-for(const file of ['index.html','IMPLANTACAO.md'])hashes[file]=createHash('sha256').update(await readFile(join(output,file))).digest('hex');
+hashes['index.html']=createHash('sha256').update(await readFile(join(output,'index.html'))).digest('hex');
 for(const file of Object.keys(hashes).filter(file=>/\.(js|css|json|html)$/.test(file))){
   const content=gzipSync(await readFile(join(output,file)));
   await writeFile(join(output,file+'.gz'),content);

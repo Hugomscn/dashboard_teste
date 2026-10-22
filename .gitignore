@@ -1,3 +1,24 @@
+# Saída gerada pelo build e dependências locais
 web/dist/
 node_modules/
 __pycache__/
+
+# Dados derivados ou material de apoio local
+data/tilapia-poles.json
+data/geography/*.geojson
+prod_anual_aquicultura_ibge.xlsx
+reviewed-data.json
+quality-report.json
+PLANO.md
+preview/
+web/archive/
+scripts/prepare_ibge.py
+scripts/prepare_geography.py
+
+# Utilitários locais de desenvolvimento
+abrir-dashboard.cmd
+iniciar-dashboard.ps1
+package.json
+scripts/serve-web.mjs
+tests/
+web/IMPLANTACAO.md
