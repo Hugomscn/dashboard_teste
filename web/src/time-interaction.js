@@ -9,12 +9,13 @@ export function nearestYearIndex(positions,x){
 // One interaction layer for both temporal renderers. Values stay in each axis's units.
 export function bindTimeCrosshair(host,{rows,positions,width,height,left,right,top,bottom,series,axes}){
   const svg=host.querySelector('svg'),tip=document.getElementById('chart-tooltip');
+  const portal=host.ownerDocument.documentElement.hasAttribute('data-embed'),textSize=portal?parseFloat(getComputedStyle(host).fontSize):10;
   const overlay=node('g',{class:'time-crosshair','pointer-events':'none',visibility:'hidden','aria-hidden':'true'});
   const vertical=node('line',{class:'crosshair-line',y1:top,y2:bottom}),horizontal=node('line',{class:'crosshair-line',x1:left,x2:width-right});
   overlay.append(vertical,horizontal);svg.append(overlay);
   const badge=(x,y,text,anchor='middle')=>{
-    const w=Math.max(38,text.length*6.2+12),start=Math.max(0,Math.min(width-w,anchor==='end'?x-w:anchor==='start'?x:x-w/2));
-    const group=node('g'),rect=node('rect',{x:start,y:y-12,width:w,height:21,class:'crosshair-badge'}),label=node('text',{x:start+w/2,y:y+3,'text-anchor':'middle',class:'crosshair-text'});
+    const w=Math.max(38,text.length*textSize*.62+12),start=Math.max(0,Math.min(width-w,anchor==='end'?x-w:anchor==='start'?x:x-w/2));
+    const group=node('g'),rect=node('rect',{x:start,y:y-textSize-2,width:w,height:textSize+11,class:'crosshair-badge'}),label=node('text',{x:start+w/2,y:y+3,'text-anchor':'middle',class:'crosshair-text'});
     label.textContent=text;group.append(rect,label);overlay.append(group);
   };
   const hide=()=>{overlay.setAttribute('visibility','hidden');tip.hidden=true;tip.classList.remove('time-tooltip');};

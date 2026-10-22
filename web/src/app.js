@@ -23,11 +23,12 @@ const columnLabels={label:'Espécie / território',year:'Ano',tonnes:'Produção
 const formatCell=(key,value)=>key==='valueReais'?money(value):['productionShare','nationalShare','regionalShare'].includes(key)?percent(value):key==='annualGrowth'?signedPercent(value):['tonnes','valuePerKg'].includes(key)?number(value):String(value??'—');
 const currentFilters=()=>views[page];
 const embeddedMode=new URL(location.href).searchParams.get('embed')==='production';
+if(embeddedMode)document.documentElement.dataset.embed='production';
 
 function readUrl(){
   const params=new URL(location.href).searchParams;
   const requested=params.get('pagina')??params.get('tab')??'overview';
-  page=embeddedMode?'territory':['municipalities','products','themes','poles'].includes(requested)?'territory':Object.hasOwn(pages,requested)?requested:'overview';
+  page=embeddedMode?(requested==='methodology'?'methodology':'territory'):['municipalities','products','themes','poles'].includes(requested)?'territory':Object.hasOwn(pages,requested)?requested:'overview';
   let incoming={year:params.get('ano'),start:params.get('inicio'),end:params.get('fim'),region:params.get('regiao'),uf:params.get('uf'),product:params.get('especie')??params.get('produto')};
   // Accept links shared by the previous version; no browser storage migration is needed.
   if(params.has('t'))try{
@@ -210,7 +211,7 @@ function ensurePoles(){
   }).catch(error=>{poleStatus='error';poleError=error.message;if(page==='territory'&&level==='poles')render();});
 }
 function productionHeader(){
-  return `<div class="production-panel-header"><h2>Exploração da produção</h2><div class="production-controls"><label class="filter-field" for="territory-level"><span>Nível</span><select id="territory-level" data-territory-level>${[['regions','Regiões'],['states','Estado/UF'],['poles','Polos de tilápia']].map(([id,label])=>`<option value="${id}" ${level===id?'selected':''}>${label}</option>`).join('')}</select></label></div></div>`;
+  return `<div class="production-panel-header">${embeddedMode?'':'<h2>Exploração da produção</h2>'}<div class="production-controls"><label class="filter-field" for="territory-level"><span>Nível</span><select id="territory-level" data-territory-level>${[['regions','Regiões'],['states','Estado/UF'],['poles','Polos de tilápia']].map(([id,label])=>`<option value="${id}" ${level===id?'selected':''}>${label}</option>`).join('')}</select></label></div></div>`;
 }
 function productionPage(f,source){
   const isPole=level==='poles',year=f.year,measure=speciesMetric==='tonnes'?'Produção (t)':'Valor da produção (R$)';
@@ -269,7 +270,7 @@ function render(){
   const measureControl=page==='territory'?`<div class="measure-switch" role="group" aria-label="Visualização">${[['tonnes','Produção (t)'],['valueReais','Valor (R$)']].map(([id,label])=>`<button type="button" id="measure-${id}" data-measure="${id}" aria-pressed="${speciesMetric===id}">${label}</button>`).join('')}</div>`:'';
   const filterBar=page==='methodology'?'':`<section class="filter-bar" aria-label="Filtros dos dados">${selectField('year','Ano',snapshot.metadata.years,year)}${!isPole?selectField('region','Região',regionChoices,f.region):''}${page==='territory'&&!isPole?selectField('uf','Estado/UF',stateChoices,f.uf):''}${!isPole?selectField('product','Espécie',[{value:'all',label:'Todas'},...snapshot.metadata.products],f.product):''}${measureControl}<button class="reset-button" data-action="reset">Limpar seleção</button></section>`;
   const viewContext=page==='methodology'?'':`<div class="view-context" aria-live="polite"><p>${isPole?'Polos cadastrados · Tilápia':`${e(f.region==='all'?'Brasil':f.region)}${f.uf!=='all'?' / '+e(f.uf):''} · ${e(f.product==='all'?'Todas as espécies disponíveis':f.product)}`} · Ano ${year}</p>${year===Math.max(...snapshot.metadata.years)?'<span class="preliminary">Resultado preliminar</span>':''}</div>`;
-  const embeddedHeader=embeddedMode?`<header class="site-header"><div class="embedded-heading"><h1>Exploração da produção</h1><div class="header-tools"><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button><button class="icon-button" data-action="print" aria-label="Imprimir exploração" title="Imprimir">⎙</button></div></div>${filterBar}</header>`:'';
+  const embeddedHeader=embeddedMode?`<header class="site-header" aria-label="Controles do painel">${page==='methodology'?'<div class="embedded-actions"><button data-action="production-back">← Voltar à produção</button></div>':filterBar}</header>`:'';
   const fullHeader=`<header class="site-header"><div class="header-main"><h1>${e(appTitle)}</h1><div class="header-tools"><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro" title="Alternar tema">◐</button><button class="icon-button" data-action="print" aria-label="Imprimir dashboard" title="Imprimir">⎙</button></div></div><nav aria-label="Páginas do dashboard">${Object.entries(pages).map(([id,label])=>`<button data-tab="${id}" ${id===page?'aria-current="page"':''}>${e(label)}</button>`).join('')}</nav>${filterBar}</header>`;
   app.innerHTML=`${embeddedMode?embeddedHeader:fullHeader}<main id="conteudo">${viewContext}<div class="page-content ${!embeddedMode&&renderedPage!==null&&renderedPage!==page?'page-enter':''}">${body}</div><footer>Fonte: IBGE/SIDRA · Pesquisa da Pecuária Municipal <button data-action="sources">Fontes e metodologia</button></footer></main>`;
   document.documentElement.style.setProperty('--header-height',app.querySelector('.site-header').offsetHeight+'px');
@@ -301,6 +302,7 @@ app.addEventListener('click',event=>{
   if(action==='territory-home'){level='regions';setFilters({region:'all',uf:'all'});}
   if(action==='region-home'){level='states';setFilters({uf:'all'});}
   if(action==='source'||action==='sources')showSource();
+  if(action==='production-back'){page='territory';updateUrl();render();window.scrollTo({top:0,behavior:'instant'});}
   if(action==='csv'){const card=cards.get(target.dataset.id),period=target.dataset.id.startsWith('theme-')?`${Math.min(...snapshot.metadata.years)}-${Math.max(...snapshot.metadata.years)}`:target.dataset.id.endsWith('history')?`${currentFilters().start}-${currentFilters().end}`:currentFilters().year;downloadCsv(card.rows,`${card.id}-${period}.csv`,card.columns??Object.keys(card.rows[0]??{}).filter(key=>!['records','productData','path'].includes(key)).map(key=>({key,label:columnLabels[key]??key})));}
   if(action==='theme'){const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('aquicultura:theme',theme);}catch{}}
   if(action==='print')window.print();
@@ -312,7 +314,7 @@ async function start(){
     store=await createDataStore(new URL('../data/',import.meta.url));snapshot=store.snapshot;
     if(!snapshot.queries?.production?.rows?.length||!snapshot.queries?.geography?.rows?.length)throw new Error('O arquivo de dados está incompleto.');
     Object.keys(pages).forEach(id=>views[id]=defaultFilters(snapshot));
-    try{document.documentElement.dataset.theme=localStorage.getItem('aquicultura:theme')??(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch{document.documentElement.dataset.theme='light';}
+    try{document.documentElement.dataset.theme=embeddedMode?'light':localStorage.getItem('aquicultura:theme')??(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}catch{document.documentElement.dataset.theme='light';}
     appTitle=snapshot.title.replace(/\s*[·—-]\s*IBGE\b/g,'');document.title=appTitle;readUrl();updateUrl(false);render();
   }catch(error){app.innerHTML=`<main class="loading"><h1>Produção aquícola</h1><p role="alert">${e(error.message)}</p><p>Verifique se a pasta de dados foi incluída junto aos arquivos da aplicação.</p><button data-action="retry">Tentar novamente</button></main>`;app.querySelector('button').onclick=()=>location.reload();}
 }

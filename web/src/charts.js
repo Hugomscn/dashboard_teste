@@ -20,16 +20,17 @@ function mark(node,text,activate,sharedTooltip=false){
 }
 export function drawBars(host,{rows,metric='tonnes',title,onSelect,selectedLabel}) {
   if(!rows.length){host.innerHTML='<p class="empty">Não há observações para este recorte.</p>';return;}
+  const portal=host.ownerDocument.documentElement.hasAttribute('data-embed'),textSize=portal?parseFloat(getComputedStyle(host).fontSize):11;
   const width=Math.max(240,host.clientWidth),height=Math.max(230,rows.length*53+42),left=2,right=16,bottom=height-30,plotWidth=width-left-right;
   const maximum=Math.max(...rows.map(row=>row[metric]??0),0),max=maximum||1;
   let body='';
   for(let i=0;i<3;i++){const value=max*i/2,x=left+plotWidth*i/2;body+=`<line class="grid-line" x1="${x}" y1="8" x2="${x}" y2="${bottom-8}"/>`+tick(x,bottom+20,(metric==='valueReais'?'R$ ':'')+compact(maximum*i/2),i===0?'start':i===2?'end':'middle');}
   rows.forEach((row,index)=>{
     const y=20+index*53;
-    const available=Math.floor(plotWidth/6.4);
+    const available=Math.floor(plotWidth/(textSize*.59));
     const label=row.label.length>available?row.label.slice(0,available-1)+'…':row.label;
     const barWidth=Math.max(0,(row[metric]??0)/max*plotWidth),value=Number.isFinite(row[metric])?(metric==='valueReais'?'R$ ':'')+compact(row[metric])+(metric==='tonnes'?' t':''):'—';
-    const inside=barWidth>value.length*7+18;
+    const inside=barWidth>value.length*textSize*.64+18;
     body+=`<g class="bar-mark mark ${row.label===selectedLabel?'selected-mark':''}" data-index="${index}" role="button" tabindex="0" aria-pressed="${row.label===selectedLabel}" aria-label="${e(row.label)}: ${e(format(row[metric],metric))}. Selecionar"><title>${e(row.label)} · ${e(format(row[metric],metric))}</title><rect class="bar-hit" x="0" y="${y-14}" width="${width}" height="50" fill="transparent"/>${tick(left,y-3,label,'start')}<rect x="${left}" y="${y+4}" width="${barWidth}" height="23" rx="0" fill="${metric==='tonnes'?'var(--c-blue)':'var(--c-teal)'}"/><text class="bar-value ${inside?'inside':''}" x="${inside?left+barWidth-7:left+barWidth+7}" y="${y+20}" text-anchor="${inside?'end':'start'}">${e(value)}</text></g>`;
   });
   host.innerHTML=svgStart(width,height,title)+body+'</svg>';
@@ -56,14 +57,15 @@ export function drawPie(host,{rows,title,onSelect,selectedLabel}) {
 export function drawLine(host,{rows,series,title,metric='tonnes',onSelect,onRange}) {
   const values=rows.flatMap(row=>series.map(s=>row[s.key])).filter(Number.isFinite);
   if(!values.length){host.innerHTML='<p class="empty">Não há observações para este período.</p>';return;}
-  const width=Math.max(280,host.clientWidth),height=300,left=66,right=20,top=18,bottom=258,plotWidth=width-left-right;
+  const portal=host.ownerDocument.documentElement.hasAttribute('data-embed');
+  const width=Math.max(280,host.clientWidth),height=300,left=portal?90:66,right=portal?30:20,top=18,bottom=258,plotWidth=width-left-right;
   const maximum=Math.max(...values,0),rough=maximum/4||1,power=10**Math.floor(Math.log10(rough));
   const step=[1,2,2.5,5,10].find(n=>n*power>=rough)*power,max=Math.max(step,Math.ceil(maximum/step)*step);
   const x=index=>left+(rows.length===1?plotWidth/2:index/(rows.length-1)*plotWidth),y=value=>bottom-value/max*(bottom-top);
   let body=`<rect class="plot-background" x="${left}" y="${top}" width="${plotWidth}" height="${bottom-top}" fill="transparent"/>`;
   for(let value=0;value<=max+step*.001;value+=step){body+=`<line class="grid-line" x1="${left}" y1="${y(value)}" x2="${width-right}" y2="${y(value)}"/>`+tick(left-10,y(value)+4,(metric==='valueReais'?'R$ ':'')+compact(value),'end');}
-  const interval=Math.max(1,Math.ceil(rows.length/(plotWidth/47)));
-  rows.forEach((row,i)=>{if(i%interval===0||i===rows.length-1)body+=tick(x(i),bottom+23,row.year);});
+  const interval=Math.max(1,Math.ceil(rows.length/(plotWidth/(portal?64:47))));
+  rows.forEach((row,i)=>{if(i===rows.length-1||(i%interval===0&&rows.length-1-i>=interval*.7))body+=tick(x(i),bottom+23,row.year);});
   series.forEach((s,seriesIndex)=>{
     const color=s.color??seriesColors[s.label]??palette[seriesIndex%palette.length];let path='',connected=false;
     rows.forEach((row,i)=>{if(!Number.isFinite(row[s.key])){connected=false;return;}path+=`${connected?'L':'M'} ${x(i)} ${y(row[s.key])} `;connected=true;});

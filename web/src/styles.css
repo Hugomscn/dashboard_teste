@@ -101,3 +101,46 @@ dialog{color:var(--text);background:var(--card);border:1px solid var(--border);b
 .crosshair-badge{fill:var(--muted)}.crosshair-text{fill:var(--card);font-size:10px;font-weight:600}
 #chart-tooltip.time-tooltip{white-space:normal;width:max-content;max-width:min(400px,calc(100vw - 16px));line-height:1.6;padding:12px;background:var(--card);color:var(--text);border:1px solid var(--border);box-shadow:0 3px 14px #0003}
 .time-tooltip-row{display:grid;grid-template-columns:8px minmax(0,1fr) auto;align-items:center;gap:8px;font-size:12px}.time-tooltip-row i{width:8px;height:8px;display:block}.time-tooltip-row strong{font-variant-numeric:tabular-nums}.time-tooltip>strong{display:block;margin-bottom:4px}
+
+/* Portal presentation: natural document height, with scrolling retained in rankings/tables. */
+:root[data-embed]{font-size:100%;color-scheme:light;--bg:#fff;--header:#fff;--shadow:none;background:#fff}
+:root[data-embed] body{background:#fff}
+:root[data-embed] #app{display:flow-root}
+:root[data-embed] #app *,
+:root[data-embed] #detail-dialog *,
+:root[data-embed] #chart-tooltip,
+:root[data-embed] #chart-tooltip *{font-size:1rem}
+:root[data-embed] #app :is(h1,h2,h3),
+:root[data-embed] #detail-dialog :is(h2,h3){font-size:1.125rem;line-height:1.4}
+:root[data-embed] #app .metric-value{font-size:2rem}
+:root[data-embed] #app .donut-value{font-size:1.625rem}
+:root[data-embed] #app main{max-width:none;width:100%;padding:0;margin:0}
+:root[data-embed] #app .site-header{position:static;background:#fff;border:0}
+:root[data-embed] #app .site-header .filter-bar{max-width:none;padding:0 0 .75rem;border:0;gap:.5rem}
+:root[data-embed] #app .filter-field{min-height:2.5rem;min-width:0;max-width:100%;padding-inline:.5rem}
+:root[data-embed] #app .filter-field select{min-height:2.375rem;min-width:0;max-width:100%}
+:root[data-embed] #app .site-header .filter-field:has(#uf){width:auto;flex:1 1 18rem}
+:root[data-embed] #app .site-header .filter-field:has(#product){flex:1 1 20rem}
+:root[data-embed] #app .site-header #product{width:0;flex:1}
+:root[data-embed] #app .measure-switch{flex-wrap:wrap}
+:root[data-embed] #app :is(.measure-switch button,.reset-button){min-height:2.375rem;padding:.375rem .625rem}
+:root[data-embed] #app .card-header{flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+:root[data-embed] #app .card-header h2{padding:0;flex:1 1 10rem}
+:root[data-embed] #app .card-tools{margin-left:auto}
+:root[data-embed] #app .metric-change span{display:block;margin:.25rem 0 0}
+:root[data-embed] #app .production-controls{min-width:0;max-width:100%}
+:root[data-embed] #app .theme-buttons button{white-space:normal}
+:root[data-embed] #app .range-under-chart{margin-left:90px;margin-right:30px}
+:root[data-embed] #app .methodology-page{max-width:none}
+:root[data-embed] #app .methodology-page .source-section{padding:1rem}
+:root[data-embed] #app footer{margin:1rem 0 0;padding:1rem 0}
+:root[data-embed] #app .embedded-actions{padding:0 0 .75rem}
+:root[data-embed] #app .loading{margin:0;padding:1rem}
+:root[data-embed] #chart-tooltip{max-width:min(25rem,calc(100vw - 16px))}
+@media(max-width:650px){
+  :root[data-embed] #app .site-header .filter-field{flex:1 1 100%}
+  :root[data-embed] #app .site-header .filter-field select{width:0;flex:1}
+  :root[data-embed] #app .view-context{gap:.5rem}
+  :root[data-embed] #app .production-context{align-items:stretch}
+  :root[data-embed] #app .chart-control select{width:0;flex:1}
+}

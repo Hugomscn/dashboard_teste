@@ -3,7 +3,8 @@ import {number,money,percent} from './model.js';
 
 export function drawArea100(host,{rows,series,title,metric='tonnes'}){
   const format=value=>metric==='valueReais'?money(value):`${number(value)} t`;
-  const width=Math.max(280,host.clientWidth),height=315,left=46,right=18,top=16,bottom=266,w=width-left-right;
+  const portal=host.ownerDocument.documentElement.hasAttribute('data-embed');
+  const width=Math.max(280,host.clientWidth),height=315,left=portal?64:46,right=portal?30:18,top=16,bottom=266,w=width-left-right;
   const x=i=>left+(rows.length===1?w/2:i/(rows.length-1)*w),y=v=>bottom-v*(bottom-top);
   let body='';
   for(const value of [0,.25,.5,.75,1])body+=`<line class="grid-line" x1="${left}" x2="${width-right}" y1="${y(value)}" y2="${y(value)}"/><text class="axis-text" x="${left-8}" y="${y(value)+4}" text-anchor="end">${value*100}%</text>`;
@@ -24,8 +25,8 @@ export function drawArea100(host,{rows,series,title,metric='tonnes'}){
       });
     }
   });
-  const step=Math.max(1,Math.ceil(rows.length/(w/55)));
-  rows.forEach((row,i)=>{if(i%step===0||i===rows.length-1)body+=`<text class="axis-text" x="${x(i)}" y="${bottom+23}" text-anchor="middle">${row.year}</text>`;});
+  const step=Math.max(1,Math.ceil(rows.length/(w/(portal?64:55))));
+  rows.forEach((row,i)=>{if(i===rows.length-1||(i%step===0&&rows.length-1-i>=step*.7))body+=`<text class="axis-text" x="${x(i)}" y="${bottom+23}" text-anchor="middle">${row.year}</text>`;});
   host.innerHTML=`<svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="group" aria-label="${e(title)}">${body}</svg><div class="chart-legend">${series.map((s,i)=>`<span><i class="legend-dot" style="background:${palette[i]}"></i>${e(s.label)}</span>`).join('')}</div><p class="chart-hint">${rows.some(r=>!valid(r))?'Anos sem total positivo ou com categorias ausentes ficam sem área. ':''}Passe o cursor ou use Tab para consultar ${metric==='valueReais'?'valor nominal e participação no valor':'toneladas e participação'}.</p>`;
   host.querySelectorAll('[data-area-row]').forEach(node=>{
     const show=event=>{const tip=document.getElementById('chart-tooltip'),box=node.getBoundingClientRect();tip.textContent=node.getAttribute('aria-label');tip.hidden=false;tip.style.left=Math.max(8,Math.min(innerWidth-280,event?.clientX??box.x))+'px';tip.style.top=Math.max(8,(event?.clientY??box.y)-75)+'px';};
