@@ -1,0 +1,4048 @@
+{
+  "file": "prod_anual_aquicultura_ibge.xlsx",
+  "sha256": "f66591c6bbdb084a7b90e329f1c5013491c96c1004cdc91eeb3c3ed07c6cf8c1",
+  "years": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "products": [
+    "Carpa",
+    "Curimatã, curimbatá",
+    "Dourado",
+    "Jatuarana, piabanha e piracanjuba",
+    "Lambari",
+    "Matrinxã",
+    "Pacu e patinga",
+    "Piau, piapara, piauçu, piava",
+    "Pintado, cachara, cachapira e pintachara, surubim",
+    "Pirapitinga",
+    "Pirarucu",
+    "Tambacu, tambatinga",
+    "Tambaqui",
+    "Tilápia",
+    "Traíra e trairão",
+    "Truta",
+    "Tucunaré",
+    "Outros peixes",
+    "Camarão",
+    "Ostras, vieiras e mexilhões"
+  ],
+  "quantitySymbols": {
+    "-": 743100,
+    "...": 257700
+  },
+  "valueSymbols": {
+    "-": 743100,
+    "...": 257700
+  },
+  "aggregateRows": 8580,
+  "municipalRows": 55640,
+  "municipalities": 4280,
+  "missingNationalProducts": {
+    "2013": [],
+    "2014": [],
+    "2015": [],
+    "2016": [],
+    "2017": [],
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [],
+    "2025": []
+  },
+  "reconciliationDifferences": [
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 100732212.0,
+      "municipalSum": 100732217.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 18713008.0,
+      "municipalSum": 18713014.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 77626504.0,
+      "municipalSum": 77626509.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 25631963.0,
+      "municipalSum": 25631968.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 27837124.0,
+      "municipalSum": 27837127.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 292855957.0,
+      "municipalSum": 292855964.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 479348962.0,
+      "municipalSum": 479348972.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 766250779.0,
+      "municipalSum": 766250788.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 6628292.0,
+      "municipalSum": 6628296.0
+    },
+    {
+      "year": "2013",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 19584949.0,
+      "municipalSum": 19584953.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 118677237.0,
+      "municipalSum": 118677242.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 17621879.0,
+      "municipalSum": 17621883.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 2069641.9999999998,
+      "municipalSum": 2069645.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 97075484.0,
+      "municipalSum": 97075490.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 35414014.0,
+      "municipalSum": 35414021.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 186086260.0,
+      "municipalSum": 186086264.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 32074398.0,
+      "municipalSum": 32074401.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 250975447.0,
+      "municipalSum": 250975454.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 758508530.0,
+      "municipalSum": 758508543.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 969186831.0,
+      "municipalSum": 969186841.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 7567106.0,
+      "municipalSum": 7567108.0
+    },
+    {
+      "year": "2014",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 18288177.0,
+      "municipalSum": 18288181.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 131736870.0,
+      "municipalSum": 131736875.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 20753971.0,
+      "municipalSum": 20753976.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1638985.0,
+      "municipalSum": 1638990.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 73492637.0,
+      "municipalSum": 73492639.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 99994385.0,
+      "municipalSum": 99994389.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 24755145.0,
+      "municipalSum": 24755149.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 197444731.0,
+      "municipalSum": 197444736.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 85804300.0,
+      "municipalSum": 85804304.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 272473068.0,
+      "municipalSum": 272473075.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 877579444.0,
+      "municipalSum": 877579463.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1179167413.0,
+      "municipalSum": 1179167432.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 7349351.0,
+      "municipalSum": 7349353.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 20458713.0,
+      "municipalSum": 20458719.0
+    },
+    {
+      "year": "2015",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 910475290.0,
+      "municipalSum": 910475293.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 139103475.0,
+      "municipalSum": 139103479.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 21128205.0,
+      "municipalSum": 21128211.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 33771435.0,
+      "municipalSum": 33771433.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1933007.0,
+      "municipalSum": 1933010.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 22249438.0,
+      "municipalSum": 22249446.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 150681990.0,
+      "municipalSum": 150681993.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 16515321.0,
+      "municipalSum": 16515325.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 326850532.0,
+      "municipalSum": 326850540.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 734806511.0,
+      "municipalSum": 734806533.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1348771802.0,
+      "municipalSum": 1348771822.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 6481318.0,
+      "municipalSum": 6481321.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 17682831.0,
+      "municipalSum": 17682836.0
+    },
+    {
+      "year": "2016",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 889017838.0,
+      "municipalSum": 889017843.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 132286560.99999999,
+      "municipalSum": 132286572.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 26194201.0,
+      "municipalSum": 26194208.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 4594468.0,
+      "municipalSum": 4594471.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 27539570.0,
+      "municipalSum": 27539572.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 102048219.0,
+      "municipalSum": 102048230.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 30729004.0,
+      "municipalSum": 30729006.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 144072410.0,
+      "municipalSum": 144072412.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 16735029.999999998,
+      "municipalSum": 16735035.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 275189578.0,
+      "municipalSum": 275189586.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 727734725.0,
+      "municipalSum": 727734745.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1580280535.0,
+      "municipalSum": 1580280563.0
+    },
+    {
+      "year": "2017",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5966614.0,
+      "municipalSum": 5966619.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 137565316.0,
+      "municipalSum": 137565323.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 25302821.0,
+      "municipalSum": 25302827.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 29285740.0,
+      "municipalSum": 29285738.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 5353592.0,
+      "municipalSum": 5353598.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 31973568.0,
+      "municipalSum": 31973572.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 92393306.0,
+      "municipalSum": 92393323.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 26883797.0,
+      "municipalSum": 26883805.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 121399195.0,
+      "municipalSum": 121399197.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 13337484.0,
+      "municipalSum": 13337487.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 273432926.0,
+      "municipalSum": 273432939.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 715469200.0,
+      "municipalSum": 715469216.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1774623918.0,
+      "municipalSum": 1774623952.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5705223.0,
+      "municipalSum": 5705231.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 18911271.0,
+      "municipalSum": 18911278.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 1136722589.0,
+      "municipalSum": 1136722591.0
+    },
+    {
+      "year": "2018",
+      "place": "Brasil",
+      "product": "Ostras, vieiras e mexilhões",
+      "metric": "valueReais",
+      "direct": 59647135.0,
+      "municipalSum": 59647138.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 135782650.0,
+      "municipalSum": 135782663.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 25675036.0,
+      "municipalSum": 25675041.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 30912780.0,
+      "municipalSum": 30912782.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 6025128.0,
+      "municipalSum": 6025130.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 31159899.0,
+      "municipalSum": 31159902.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 94159855.0,
+      "municipalSum": 94159863.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 27975226.0,
+      "municipalSum": 27975235.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 123394112.0,
+      "municipalSum": 123394124.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 25243243.0,
+      "municipalSum": 25243246.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 290397912.0,
+      "municipalSum": 290397925.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 738616777.0,
+      "municipalSum": 738616801.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1882961726.0,
+      "municipalSum": 1882961757.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 6653410.0,
+      "municipalSum": 6653417.0
+    },
+    {
+      "year": "2019",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 22511357.0,
+      "municipalSum": 22511362.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 141981158.0,
+      "municipalSum": 141981172.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 28646753.0,
+      "municipalSum": 28646758.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 6108063.0,
+      "municipalSum": 6108069.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 36437411.0,
+      "municipalSum": 36437414.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 99333403.0,
+      "municipalSum": 99333414.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 28705285.0,
+      "municipalSum": 28705292.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 138408229.0,
+      "municipalSum": 138408233.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 15299013.0,
+      "municipalSum": 15299015.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 26087454.0,
+      "municipalSum": 26087452.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 339210967.0,
+      "municipalSum": 339210973.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 783852385.0,
+      "municipalSum": 783852413.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 2352005708.0,
+      "municipalSum": 2352005750.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 7063719.0,
+      "municipalSum": 7063726.0
+    },
+    {
+      "year": "2020",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 30626013.0,
+      "municipalSum": 30626022.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 155580271.0,
+      "municipalSum": 155580277.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 30637119.0,
+      "municipalSum": 30637123.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 6032771.0,
+      "municipalSum": 6032773.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 6071183.0,
+      "municipalSum": 6071187.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 45388403.0,
+      "municipalSum": 45388406.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 83813721.0,
+      "municipalSum": 83813738.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 30002407.0,
+      "municipalSum": 30002417.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 171794876.0,
+      "municipalSum": 171794889.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 16310876.0,
+      "municipalSum": 16310878.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 32829273.0,
+      "municipalSum": 32829278.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 421503092.0,
+      "municipalSum": 421503105.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1000983663.0,
+      "municipalSum": 1000983686.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 2809558436.0,
+      "municipalSum": 2809558461.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 7386390.0,
+      "municipalSum": 7386394.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 27611628.0,
+      "municipalSum": 27611632.0
+    },
+    {
+      "year": "2021",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 2138564409.0,
+      "municipalSum": 2138564412.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 167945116.0,
+      "municipalSum": 167945119.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 33913359.0,
+      "municipalSum": 33913363.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 5730275.0,
+      "municipalSum": 5730279.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 5920271.0,
+      "municipalSum": 5920276.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 49571320.0,
+      "municipalSum": 49571324.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 86869844.0,
+      "municipalSum": 86869851.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 32304259.0,
+      "municipalSum": 32304265.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 177689643.0,
+      "municipalSum": 177689651.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 34159495.0,
+      "municipalSum": 34159499.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 442075381.0,
+      "municipalSum": 442075394.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1090493517.0,
+      "municipalSum": 1090493536.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 3485740238.0,
+      "municipalSum": 3485740277.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 8246518.0,
+      "municipalSum": 8246520.0
+    },
+    {
+      "year": "2022",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 30336325.0,
+      "municipalSum": 30336336.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 176124292.0,
+      "municipalSum": 176124301.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 34304269.0,
+      "municipalSum": 34304272.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 6582770.0,
+      "municipalSum": 6582772.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 66975922.00000001,
+      "municipalSum": 66975924.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 99578651.0,
+      "municipalSum": 99578664.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 38039685.0,
+      "municipalSum": 38039697.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 182899759.0,
+      "municipalSum": 182899765.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 35929621.0,
+      "municipalSum": 35929623.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 489408533.0,
+      "municipalSum": 489408550.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1213184410.0,
+      "municipalSum": 1213184439.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 4187605535.0,
+      "municipalSum": 4187605584.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 8047424.0,
+      "municipalSum": 8047430.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 36910913.0,
+      "municipalSum": 36910922.0
+    },
+    {
+      "year": "2023",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 2626709369.0,
+      "municipalSum": 2626709371.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 181889222.0,
+      "municipalSum": 181889229.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 38778787.0,
+      "municipalSum": 38778793.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 80914331.0,
+      "municipalSum": 80914337.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 89212706.0,
+      "municipalSum": 89212720.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 39723846.0,
+      "municipalSum": 39723850.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 199426057.0,
+      "municipalSum": 199426077.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 25951558.0,
+      "municipalSum": 25951560.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 33730290.0,
+      "municipalSum": 33730293.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 543539421.0,
+      "municipalSum": 543539439.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1495893800.0,
+      "municipalSum": 1495893828.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 4918002414.0,
+      "municipalSum": 4918002454.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 8522226.0,
+      "municipalSum": 8522232.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 39191709.0,
+      "municipalSum": 39191714.0
+    },
+    {
+      "year": "2024",
+      "place": "Brasil",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 3038531713.0,
+      "municipalSum": 3038531715.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 177974571.0,
+      "municipalSum": 177974590.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 44105551.0,
+      "municipalSum": 44105558.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 5389850.0,
+      "municipalSum": 5389852.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 4797152.0,
+      "municipalSum": 4797160.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 75174086.0,
+      "municipalSum": 75174096.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 83740985.0,
+      "municipalSum": 83740999.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 39816097.0,
+      "municipalSum": 39816108.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 321110111.0,
+      "municipalSum": 321110128.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 26941214.0,
+      "municipalSum": 26941218.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 32800792.0,
+      "municipalSum": 32800796.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 752998844.0,
+      "municipalSum": 752998870.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1605564436.0,
+      "municipalSum": 1605564471.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 5229224641.0,
+      "municipalSum": 5229224692.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 8889819.0,
+      "municipalSum": 8889825.0
+    },
+    {
+      "year": "2025",
+      "place": "Brasil",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 42986234.0,
+      "municipalSum": 42986243.0
+    },
+    {
+      "year": "2013",
+      "place": "Norte",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 8592522.0,
+      "municipalSum": 8592526.0
+    },
+    {
+      "year": "2013",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 10217921.0,
+      "municipalSum": 10217923.0
+    },
+    {
+      "year": "2013",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 19991321.0,
+      "municipalSum": 19991323.0
+    },
+    {
+      "year": "2013",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 287091885.0,
+      "municipalSum": 287091888.0
+    },
+    {
+      "year": "2014",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 547536720.0,
+      "municipalSum": 547536724.0
+    },
+    {
+      "year": "2015",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 69405168.0,
+      "municipalSum": 69405170.0
+    },
+    {
+      "year": "2015",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 34236885.0,
+      "municipalSum": 34236887.0
+    },
+    {
+      "year": "2015",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 9672035.0,
+      "municipalSum": 9672037.0
+    },
+    {
+      "year": "2015",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 81828000.0,
+      "municipalSum": 81828003.0
+    },
+    {
+      "year": "2015",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 33713837.0,
+      "municipalSum": 33713839.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 4815644.0,
+      "municipalSum": 4815646.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 31311287.0,
+      "municipalSum": 31311285.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 7528616.0,
+      "municipalSum": 7528618.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 57473859.0,
+      "municipalSum": 57473862.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 12844193.0,
+      "municipalSum": 12844197.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 541999790.0,
+      "municipalSum": 541999797.0
+    },
+    {
+      "year": "2016",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 2872138.0,
+      "municipalSum": 2872140.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 4842503.0,
+      "municipalSum": 4842505.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 30854109.0,
+      "municipalSum": 30854107.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 25959453.0,
+      "municipalSum": 25959457.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 65518323.0,
+      "municipalSum": 65518321.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 12842282.0,
+      "municipalSum": 12842287.0
+    },
+    {
+      "year": "2017",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 534593204.0,
+      "municipalSum": 534593208.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 4930252.0,
+      "municipalSum": 4930254.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 27604748.0,
+      "municipalSum": 27604745.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 28969684.0,
+      "municipalSum": 28969686.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 19499134.0,
+      "municipalSum": 19499136.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 10609377.0,
+      "municipalSum": 10609379.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 42551520.0,
+      "municipalSum": 42551523.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 520586193.0,
+      "municipalSum": 520586198.0
+    },
+    {
+      "year": "2018",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 3691634.0,
+      "municipalSum": 3691638.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 4763978.0,
+      "municipalSum": 4763980.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 29392737.0,
+      "municipalSum": 29392739.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 27945217.0,
+      "municipalSum": 27945219.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 9178106.0,
+      "municipalSum": 9178108.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 61759996.0,
+      "municipalSum": 61760001.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 21578576.0,
+      "municipalSum": 21578578.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 48136585.0,
+      "municipalSum": 48136588.0
+    },
+    {
+      "year": "2019",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 535242670.00000006,
+      "municipalSum": 535242676.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 33493871.0,
+      "municipalSum": 33493873.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 9400787.0,
+      "municipalSum": 9400789.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 11998829.0,
+      "municipalSum": 11998831.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 22191857.0,
+      "municipalSum": 22191855.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 56826811.0,
+      "municipalSum": 56826813.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 565764328.0,
+      "municipalSum": 565764332.0
+    },
+    {
+      "year": "2020",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 4299227.0,
+      "municipalSum": 4299229.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 42054444.0,
+      "municipalSum": 42054446.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 7044253.0,
+      "municipalSum": 7044259.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 11092392.0,
+      "municipalSum": 11092397.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 76173432.0,
+      "municipalSum": 76173436.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 12289009.0,
+      "municipalSum": 12289011.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 28160319.0,
+      "municipalSum": 28160322.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 82031383.0,
+      "municipalSum": 82031388.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 759404247.0,
+      "municipalSum": 759404251.0
+    },
+    {
+      "year": "2021",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 7983574.0,
+      "municipalSum": 7983572.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 3391245.0,
+      "municipalSum": 3391248.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 43208745.0,
+      "municipalSum": 43208747.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 11407478.0,
+      "municipalSum": 11407480.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 80559349.0,
+      "municipalSum": 80559354.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 28396021.0,
+      "municipalSum": 28396024.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 95083898.0,
+      "municipalSum": 95083902.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 842310307.0,
+      "municipalSum": 842310313.0
+    },
+    {
+      "year": "2022",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 15013097.0,
+      "municipalSum": 15013099.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 3519808.0,
+      "municipalSum": 3519810.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 6073006.0,
+      "municipalSum": 6073008.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 12134138.0,
+      "municipalSum": 12134142.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 23725797.0,
+      "municipalSum": 23725800.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 130997001.0,
+      "municipalSum": 130997004.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 924817529.0,
+      "municipalSum": 924817534.0
+    },
+    {
+      "year": "2023",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 19548169.0,
+      "municipalSum": 19548177.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 56299810.0,
+      "municipalSum": 56299812.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 4905367.0,
+      "municipalSum": 4905370.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 67856799.0,
+      "municipalSum": 67856804.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 17825208.0,
+      "municipalSum": 17825210.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 23449968.0,
+      "municipalSum": 23449970.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 157838676.0,
+      "municipalSum": 157838679.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1188935274.0,
+      "municipalSum": 1188935282.0
+    },
+    {
+      "year": "2024",
+      "place": "Norte",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 24984732.0,
+      "municipalSum": 24984735.0
+    },
+    {
+      "year": "2025",
+      "place": "Norte",
+      "product": "Jatuarana, piabanha e piracanjuba",
+      "metric": "valueReais",
+      "direct": 2843145.0,
+      "municipalSum": 2843147.0
+    },
+    {
+      "year": "2025",
+      "place": "Norte",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 49929287.0,
+      "municipalSum": 49929289.0
+    },
+    {
+      "year": "2025",
+      "place": "Norte",
+      "product": "Pirapitinga",
+      "metric": "valueReais",
+      "direct": 19631274.0,
+      "municipalSum": 19631277.0
+    },
+    {
+      "year": "2025",
+      "place": "Norte",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 22558230.0,
+      "municipalSum": 22558232.0
+    },
+    {
+      "year": "2025",
+      "place": "Norte",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 1264389966.0,
+      "municipalSum": 1264389968.0
+    },
+    {
+      "year": "2013",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 39943784.0,
+      "municipalSum": 39943786.0
+    },
+    {
+      "year": "2013",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 110289054.0,
+      "municipalSum": 110289058.0
+    },
+    {
+      "year": "2013",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 268729207.0,
+      "municipalSum": 268729212.0
+    },
+    {
+      "year": "2014",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 10834534.0,
+      "municipalSum": 10834536.0
+    },
+    {
+      "year": "2014",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 42883392.0,
+      "municipalSum": 42883395.0
+    },
+    {
+      "year": "2014",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 128512965.0,
+      "municipalSum": 128512971.0
+    },
+    {
+      "year": "2014",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 334608776.0,
+      "municipalSum": 334608779.0
+    },
+    {
+      "year": "2015",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 12492109.0,
+      "municipalSum": 12492112.0
+    },
+    {
+      "year": "2015",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 55544151.0,
+      "municipalSum": 55544153.0
+    },
+    {
+      "year": "2015",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 143584017.0,
+      "municipalSum": 143584030.0
+    },
+    {
+      "year": "2015",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 325559980.0,
+      "municipalSum": 325559988.0
+    },
+    {
+      "year": "2015",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 902531852.0,
+      "municipalSum": 902531855.0
+    },
+    {
+      "year": "2016",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 15249762.0,
+      "municipalSum": 15249765.0
+    },
+    {
+      "year": "2016",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 66582073.99999999,
+      "municipalSum": 66582080.0
+    },
+    {
+      "year": "2016",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 149376714.0,
+      "municipalSum": 149376728.0
+    },
+    {
+      "year": "2016",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 310164454.0,
+      "municipalSum": 310164461.0
+    },
+    {
+      "year": "2016",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 883303760.0,
+      "municipalSum": 883303765.0
+    },
+    {
+      "year": "2017",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 19693041.0,
+      "municipalSum": 19693046.0
+    },
+    {
+      "year": "2017",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 72083431.0,
+      "municipalSum": 72083438.0
+    },
+    {
+      "year": "2017",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 154226402.0,
+      "municipalSum": 154226415.0
+    },
+    {
+      "year": "2017",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 422845167.0,
+      "municipalSum": 422845177.0
+    },
+    {
+      "year": "2018",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 18728748.0,
+      "municipalSum": 18728753.0
+    },
+    {
+      "year": "2018",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 69936631.0,
+      "municipalSum": 69936636.0
+    },
+    {
+      "year": "2018",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 148294455.0,
+      "municipalSum": 148294462.0
+    },
+    {
+      "year": "2018",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 409974484.0,
+      "municipalSum": 409974495.0
+    },
+    {
+      "year": "2018",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 1130668563.0,
+      "municipalSum": 1130668565.0
+    },
+    {
+      "year": "2019",
+      "place": "Nordeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 7645906.0,
+      "municipalSum": 7645908.0
+    },
+    {
+      "year": "2019",
+      "place": "Nordeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 5299216.0,
+      "municipalSum": 5299218.0
+    },
+    {
+      "year": "2019",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 70939119.0,
+      "municipalSum": 70939126.0
+    },
+    {
+      "year": "2019",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 150747513.0,
+      "municipalSum": 150747526.0
+    },
+    {
+      "year": "2019",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 438164240.0,
+      "municipalSum": 438164249.0
+    },
+    {
+      "year": "2020",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 22281615.0,
+      "municipalSum": 22281617.0
+    },
+    {
+      "year": "2020",
+      "place": "Nordeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 12901355.0,
+      "municipalSum": 12901357.0
+    },
+    {
+      "year": "2020",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 170295293.0,
+      "municipalSum": 170295313.0
+    },
+    {
+      "year": "2020",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 523597869.0,
+      "municipalSum": 523597880.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 24143968.0,
+      "municipalSum": 24143971.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 15125861.0,
+      "municipalSum": 15125863.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 9423228.0,
+      "municipalSum": 9423232.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 5629823.0,
+      "municipalSum": 5629826.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 90488627.0,
+      "municipalSum": 90488632.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 188650402.0,
+      "municipalSum": 188650416.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 634465709.0,
+      "municipalSum": 634465717.0
+    },
+    {
+      "year": "2021",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 2127535205.0,
+      "municipalSum": 2127535207.0
+    },
+    {
+      "year": "2022",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 26147135.0,
+      "municipalSum": 26147138.0
+    },
+    {
+      "year": "2022",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 92279396.0,
+      "municipalSum": 92279401.0
+    },
+    {
+      "year": "2022",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 195785332.0,
+      "municipalSum": 195785341.0
+    },
+    {
+      "year": "2022",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 759584627.0,
+      "municipalSum": 759584639.0
+    },
+    {
+      "year": "2022",
+      "place": "Nordeste",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 5722505.0,
+      "municipalSum": 5722507.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 27131862.0,
+      "municipalSum": 27131864.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 11224653.0,
+      "municipalSum": 11224656.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 109490058.0,
+      "municipalSum": 109490066.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 216306145.0,
+      "municipalSum": 216306160.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 947123880.0,
+      "municipalSum": 947123900.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 2040275.0,
+      "municipalSum": 2040277.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 6519728.0,
+      "municipalSum": 6519730.0
+    },
+    {
+      "year": "2023",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 2612513644.0,
+      "municipalSum": 2612513646.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 2427030.0,
+      "municipalSum": 2427032.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 30657964.0,
+      "municipalSum": 30657968.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 29215847.0,
+      "municipalSum": 29215849.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 7724933.0,
+      "municipalSum": 7724939.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 115222058.0,
+      "municipalSum": 115222066.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 236663158.0,
+      "municipalSum": 236663173.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1047014892.0,
+      "municipalSum": 1047014911.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 7246413.0,
+      "municipalSum": 7246416.0
+    },
+    {
+      "year": "2024",
+      "place": "Nordeste",
+      "product": "Camarão",
+      "metric": "valueReais",
+      "direct": 3028003713.0,
+      "municipalSum": 3028003715.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 3133433.0,
+      "municipalSum": 3133443.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 35931104.0,
+      "municipalSum": 35931110.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 764044.0,
+      "municipalSum": 764047.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 27189230.0,
+      "municipalSum": 27189235.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 13920960.0,
+      "municipalSum": 13920966.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 8304643.0,
+      "municipalSum": 8304652.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Pirarucu",
+      "metric": "valueReais",
+      "direct": 4093064.0,
+      "municipalSum": 4093066.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 143863575.0,
+      "municipalSum": 143863592.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 216512402.0,
+      "municipalSum": 216512429.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1121361980.0,
+      "municipalSum": 1121362011.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 1845046.0,
+      "municipalSum": 1845048.0
+    },
+    {
+      "year": "2025",
+      "place": "Nordeste",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 8768617.0,
+      "municipalSum": 8768620.0
+    },
+    {
+      "year": "2014",
+      "place": "Sudeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1638551.0,
+      "municipalSum": 1638553.0
+    },
+    {
+      "year": "2015",
+      "place": "Sudeste",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 2260400.0,
+      "municipalSum": 2260403.0
+    },
+    {
+      "year": "2015",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 2702533.0,
+      "municipalSum": 2702537.0
+    },
+    {
+      "year": "2015",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 317308750.0,
+      "municipalSum": 317308754.0
+    },
+    {
+      "year": "2016",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 442573461.0,
+      "municipalSum": 442573465.0
+    },
+    {
+      "year": "2017",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 3778672.0,
+      "municipalSum": 3778674.0
+    },
+    {
+      "year": "2017",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 432815317.0,
+      "municipalSum": 432815326.0
+    },
+    {
+      "year": "2018",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 471126738.0,
+      "municipalSum": 471126749.0
+    },
+    {
+      "year": "2019",
+      "place": "Sudeste",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 1737222.0,
+      "municipalSum": 1737224.0
+    },
+    {
+      "year": "2019",
+      "place": "Sudeste",
+      "product": "Curimatã, curimbatá",
+      "metric": "valueReais",
+      "direct": 413004.0,
+      "municipalSum": 413006.0
+    },
+    {
+      "year": "2019",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 3968151.0,
+      "municipalSum": 3968154.0
+    },
+    {
+      "year": "2019",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 497155407.0,
+      "municipalSum": 497155418.0
+    },
+    {
+      "year": "2020",
+      "place": "Sudeste",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 1662173.0,
+      "municipalSum": 1662176.0
+    },
+    {
+      "year": "2020",
+      "place": "Sudeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 4786328.0,
+      "municipalSum": 4786330.0
+    },
+    {
+      "year": "2020",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 4092085.0,
+      "municipalSum": 4092089.0
+    },
+    {
+      "year": "2020",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 616582343.0,
+      "municipalSum": 616582359.0
+    },
+    {
+      "year": "2021",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 4488223.0,
+      "municipalSum": 4488226.0
+    },
+    {
+      "year": "2021",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 711870711.0,
+      "municipalSum": 711870718.0
+    },
+    {
+      "year": "2022",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 5466366.0,
+      "municipalSum": 5466369.0
+    },
+    {
+      "year": "2022",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 834902771.0,
+      "municipalSum": 834902783.0
+    },
+    {
+      "year": "2023",
+      "place": "Sudeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 24621710.0,
+      "municipalSum": 24621712.0
+    },
+    {
+      "year": "2023",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 5231213.0,
+      "municipalSum": 5231216.0
+    },
+    {
+      "year": "2023",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1084091795.0,
+      "municipalSum": 1084091808.0
+    },
+    {
+      "year": "2024",
+      "place": "Sudeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 16185571.0,
+      "municipalSum": 16185573.0
+    },
+    {
+      "year": "2024",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1207962957.0,
+      "municipalSum": 1207962963.0
+    },
+    {
+      "year": "2025",
+      "place": "Sudeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 4630209.0,
+      "municipalSum": 4630214.0
+    },
+    {
+      "year": "2025",
+      "place": "Sudeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1289099957.0,
+      "municipalSum": 1289099963.0
+    },
+    {
+      "year": "2013",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 96501768.0,
+      "municipalSum": 96501773.0
+    },
+    {
+      "year": "2013",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 10853621.0,
+      "municipalSum": 10853623.0
+    },
+    {
+      "year": "2013",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 240548711.0,
+      "municipalSum": 240548714.0
+    },
+    {
+      "year": "2013",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5236768.0,
+      "municipalSum": 5236771.0
+    },
+    {
+      "year": "2013",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 10188188.0,
+      "municipalSum": 10188191.0
+    },
+    {
+      "year": "2014",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 114851190.0,
+      "municipalSum": 114851194.0
+    },
+    {
+      "year": "2014",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 381111.0,
+      "municipalSum": 381113.0
+    },
+    {
+      "year": "2014",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 11568144.0,
+      "municipalSum": 11568146.0
+    },
+    {
+      "year": "2014",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 316927484.0,
+      "municipalSum": 316927490.0
+    },
+    {
+      "year": "2014",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 12976002.0,
+      "municipalSum": 12976006.0
+    },
+    {
+      "year": "2015",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 127840484.0,
+      "municipalSum": 127840486.0
+    },
+    {
+      "year": "2015",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 521977.0,
+      "municipalSum": 521982.0
+    },
+    {
+      "year": "2015",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 443067835.0,
+      "municipalSum": 443067841.0
+    },
+    {
+      "year": "2015",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 13265383.0,
+      "municipalSum": 13265387.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 135125145.0,
+      "municipalSum": 135125148.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 698963.0,
+      "municipalSum": 698965.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1338007.0,
+      "municipalSum": 1338010.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 510082344.0,
+      "municipalSum": 510082351.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4704813.0,
+      "municipalSum": 4704817.0
+    },
+    {
+      "year": "2016",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 13030486.0,
+      "municipalSum": 13030491.0
+    },
+    {
+      "year": "2017",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 127800910.0,
+      "municipalSum": 127800919.0
+    },
+    {
+      "year": "2017",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 839980.0,
+      "municipalSum": 839982.0
+    },
+    {
+      "year": "2017",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 16922071.0,
+      "municipalSum": 16922076.0
+    },
+    {
+      "year": "2017",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 606650593.0,
+      "municipalSum": 606650601.0
+    },
+    {
+      "year": "2017",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4550630.0,
+      "municipalSum": 4550635.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 133627829.0,
+      "municipalSum": 133627834.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1039222.0,
+      "municipalSum": 1039227.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 16798713.0,
+      "municipalSum": 16798724.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1753449.0,
+      "municipalSum": 1753454.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 755700700.0,
+      "municipalSum": 755700708.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4534014.0,
+      "municipalSum": 4534023.0
+    },
+    {
+      "year": "2018",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 13754230.0,
+      "municipalSum": 13754237.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 131719891.0,
+      "municipalSum": 131719901.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1079407.0,
+      "municipalSum": 1079409.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 16469266.0,
+      "municipalSum": 16469271.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 781050227.0,
+      "municipalSum": 781050232.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4703765.0,
+      "municipalSum": 4703771.0
+    },
+    {
+      "year": "2019",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 15838830.0,
+      "municipalSum": 15838835.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 137389425.0,
+      "municipalSum": 137389436.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1132979.0,
+      "municipalSum": 1132984.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 18193624.0,
+      "municipalSum": 18193630.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1792539.0,
+      "municipalSum": 1792542.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1016120899.0,
+      "municipalSum": 1016120908.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4633353.0,
+      "municipalSum": 4633360.0
+    },
+    {
+      "year": "2020",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 16370293.0,
+      "municipalSum": 16370301.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 151881964.0,
+      "municipalSum": 151881968.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1049226.0,
+      "municipalSum": 1049228.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 17948675.0,
+      "municipalSum": 17948680.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1202502639.0,
+      "municipalSum": 1202502649.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4704490.0,
+      "municipalSum": 4704493.0
+    },
+    {
+      "year": "2021",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 16717344.000000002,
+      "municipalSum": 16717346.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 163693397.0,
+      "municipalSum": 163693399.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 1395518.0,
+      "municipalSum": 1395521.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 22812870.0,
+      "municipalSum": 22812874.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 1634680.0,
+      "municipalSum": 1634682.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1514674387.0,
+      "municipalSum": 1514674396.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5151143.0,
+      "municipalSum": 5151145.0
+    },
+    {
+      "year": "2022",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 16947372.0,
+      "municipalSum": 16947381.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 170510771.0,
+      "municipalSum": 170510778.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 25495432.0,
+      "municipalSum": 25495437.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1659418.0,
+      "municipalSum": 1659421.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 1747395255.0,
+      "municipalSum": 1747395258.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5000519.0,
+      "municipalSum": 5000524.0
+    },
+    {
+      "year": "2023",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 16601694.0,
+      "municipalSum": 16601701.0
+    },
+    {
+      "year": "2024",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 176431863.0,
+      "municipalSum": 176431867.0
+    },
+    {
+      "year": "2024",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 20483920.0,
+      "municipalSum": 20483928.0
+    },
+    {
+      "year": "2024",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 2251839988.0,
+      "municipalSum": 2251839995.0
+    },
+    {
+      "year": "2024",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 4992814.0,
+      "municipalSum": 4992819.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Carpa",
+      "metric": "valueReais",
+      "direct": 171837814.0,
+      "municipalSum": 171837822.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Lambari",
+      "metric": "valueReais",
+      "direct": 799771.0,
+      "municipalSum": 799776.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 18451120.0,
+      "municipalSum": 18451129.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 1591317.0,
+      "municipalSum": 1591319.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 207567.0,
+      "municipalSum": 207569.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 2399678253.0,
+      "municipalSum": 2399678261.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Traíra e trairão",
+      "metric": "valueReais",
+      "direct": 5430384.0,
+      "municipalSum": 5430388.0
+    },
+    {
+      "year": "2025",
+      "place": "Sul",
+      "product": "Outros peixes",
+      "metric": "valueReais",
+      "direct": 17135260.0,
+      "municipalSum": 17135266.0
+    },
+    {
+      "year": "2013",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 15274732.0,
+      "municipalSum": 15274734.0
+    },
+    {
+      "year": "2013",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 230041390.0,
+      "municipalSum": 230041393.0
+    },
+    {
+      "year": "2013",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 77810926.0,
+      "municipalSum": 77810928.0
+    },
+    {
+      "year": "2014",
+      "place": "Centro-Oeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 58928268.0,
+      "municipalSum": 58928270.0
+    },
+    {
+      "year": "2014",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 163317727.0,
+      "municipalSum": 163317730.0
+    },
+    {
+      "year": "2014",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 173153149.0,
+      "municipalSum": 173153152.0
+    },
+    {
+      "year": "2014",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 78650858.0,
+      "municipalSum": 78650861.0
+    },
+    {
+      "year": "2015",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 9477680.0,
+      "municipalSum": 9477683.0
+    },
+    {
+      "year": "2015",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 122138523.0,
+      "municipalSum": 122138525.0
+    },
+    {
+      "year": "2015",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 179000694.0,
+      "municipalSum": 179000697.0
+    },
+    {
+      "year": "2016",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 8547713.0,
+      "municipalSum": 8547715.0
+    },
+    {
+      "year": "2016",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 215679914.0,
+      "municipalSum": 215679916.0
+    },
+    {
+      "year": "2018",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 52456098.0,
+      "municipalSum": 52456100.0
+    },
+    {
+      "year": "2018",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 156490439.0,
+      "municipalSum": 156490443.0
+    },
+    {
+      "year": "2018",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 41974891.0,
+      "municipalSum": 41974893.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 20650434.0,
+      "municipalSum": 20650436.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 7762009.0,
+      "municipalSum": 7762012.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 50863000.0,
+      "municipalSum": 50863004.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 166679802.0,
+      "municipalSum": 166679806.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 48619182.0,
+      "municipalSum": 48619185.0
+    },
+    {
+      "year": "2019",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 162642824.0,
+      "municipalSum": 162642828.0
+    },
+    {
+      "year": "2020",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 191405370.0,
+      "municipalSum": 191405374.0
+    },
+    {
+      "year": "2021",
+      "place": "Centro-Oeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 23151491.0,
+      "municipalSum": 23151495.0
+    },
+    {
+      "year": "2021",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 84491974.0,
+      "municipalSum": 84491981.0
+    },
+    {
+      "year": "2021",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 243461229.0,
+      "municipalSum": 243461231.0
+    },
+    {
+      "year": "2021",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 252735803.0,
+      "municipalSum": 252735805.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 20476936.0,
+      "municipalSum": 20476939.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 7034014.0,
+      "municipalSum": 7034016.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 84550761.0,
+      "municipalSum": 84550764.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 248351353.0,
+      "municipalSum": 248351355.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 46812684.0,
+      "municipalSum": 46812686.0
+    },
+    {
+      "year": "2022",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 361565356.0,
+      "municipalSum": 361565360.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Pacu e patinga",
+      "metric": "valueReais",
+      "direct": 23570254.0,
+      "municipalSum": 23570256.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Piau, piapara, piauçu, piava",
+      "metric": "valueReais",
+      "direct": 11446544.0,
+      "municipalSum": 11446546.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 101842975.0,
+      "municipalSum": 101842979.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 241910775.0,
+      "municipalSum": 241910779.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 66668255.99999999,
+      "municipalSum": 66668262.0
+    },
+    {
+      "year": "2023",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 389446436.0,
+      "municipalSum": 389446441.0
+    },
+    {
+      "year": "2024",
+      "place": "Centro-Oeste",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 22744592.0,
+      "municipalSum": 22744594.0
+    },
+    {
+      "year": "2024",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 117483955.0,
+      "municipalSum": 117483963.0
+    },
+    {
+      "year": "2024",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 261303922.0,
+      "municipalSum": 261303928.0
+    },
+    {
+      "year": "2024",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 64488422.0,
+      "municipalSum": 64488425.0
+    },
+    {
+      "year": "2024",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 386199844.0,
+      "municipalSum": 386199850.0
+    },
+    {
+      "year": "2025",
+      "place": "Centro-Oeste",
+      "product": "Matrinxã",
+      "metric": "valueReais",
+      "direct": 23415218.0,
+      "municipalSum": 23415223.0
+    },
+    {
+      "year": "2025",
+      "place": "Centro-Oeste",
+      "product": "Pintado, cachara, cachapira e pintachara, surubim",
+      "metric": "valueReais",
+      "direct": 244796858.0,
+      "municipalSum": 244796865.0
+    },
+    {
+      "year": "2025",
+      "place": "Centro-Oeste",
+      "product": "Tambacu, tambatinga",
+      "metric": "valueReais",
+      "direct": 397369780.0,
+      "municipalSum": 397369788.0
+    },
+    {
+      "year": "2025",
+      "place": "Centro-Oeste",
+      "product": "Tambaqui",
+      "metric": "valueReais",
+      "direct": 119952538.0,
+      "municipalSum": 119952540.0
+    },
+    {
+      "year": "2025",
+      "place": "Centro-Oeste",
+      "product": "Tilápia",
+      "metric": "valueReais",
+      "direct": 390171100.0,
+      "municipalSum": 390171106.0
+    }
+  ],
+  "nationalTotals": [
+    {
+      "year": "2013",
+      "tonnes": 476521.06,
+      "valueReais": 2844005346.0
+    },
+    {
+      "year": "2014",
+      "tonnes": 563086.573,
+      "valueReais": 3610686116.0
+    },
+    {
+      "year": "2015",
+      "tonnes": 577236.4249999999,
+      "valueReais": 4079109657.0
+    },
+    {
+      "year": "2016",
+      "tonnes": 541971.013,
+      "valueReais": 3942580883.0
+    },
+    {
+      "year": "2017",
+      "tonnes": 565750.512,
+      "valueReais": 4143054410.0
+    },
+    {
+      "year": "2018",
+      "tonnes": 583708.655,
+      "valueReais": 4525156941.0
+    },
+    {
+      "year": "2019",
+      "tonnes": 607230.199,
+      "valueReais": 4797981341.0
+    },
+    {
+      "year": "2020",
+      "tonnes": 642279.927,
+      "valueReais": 5589087247.0
+    },
+    {
+      "year": "2021",
+      "tonnes": 700801.162,
+      "valueReais": 7100797108.0
+    },
+    {
+      "year": "2022",
+      "tonnes": 742155.677,
+      "valueReais": 8028058297.0
+    },
+    {
+      "year": "2023",
+      "tonnes": 792454.774,
+      "valueReais": 9357574945.0
+    },
+    {
+      "year": "2024",
+      "tonnes": 886673.067,
+      "valueReais": 10904569215.0
+    },
+    {
+      "year": "2025",
+      "tonnes": 965365.226,
+      "valueReais": 12253767244.0
+    }
+  ]
+}
