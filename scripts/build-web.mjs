@@ -1,4 +1,4 @@
-import {mkdir, readFile, writeFile, copyFile, readdir} from 'node:fs/promises';
+import {mkdir, readFile, writeFile, readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {createHash} from 'node:crypto';
@@ -17,14 +17,25 @@ const poleCodes=new Set(poles.rows.flatMap(p=>p.codes));
 data.queries.poleProduction={...source.queries.municipalities,rows:source.queries.municipalities.rows.filter(row=>poleCodes.has(row.code)),source:{...source.queries.municipalities.source,label:'IBGE · Municípios cadastrados nos polos de tilápia',caveats:[...source.queries.municipalities.source.caveats,'Subconjunto dos municípios do cadastro de polos; registros originais preservados. O painel seleciona somente a categoria Tilápia.']}};
 await mkdir(join(output,'assets'),{recursive:true});
 await mkdir(join(output,'data'),{recursive:true});
-await copyFile(join(root,'web/index.html'),join(output,'index.html'));
-const files=(await readdir(join(root,'web/src'))).filter(file=>/\.(js|css)$/.test(file));
+const files=(await readdir(join(root,'web/src'))).filter(file=>/\.(js|css)$/.test(file)).sort();
+const sources=new Map(await Promise.all(files.map(async file=>[file,await readFile(join(root,'web/src',file),'utf8')])));
+const versionHash=createHash('sha256');
+for(const [file,content] of sources)versionHash.update(file+'\0'+content+'\0');
+const version=versionHash.digest('hex').slice(0,12);
+const assetNames=new Map(files.map(file=>[file,file.replace(/\.(js|css)$/,`.${version}.$1`)]));
+let html=await readFile(join(root,'web/index.html'),'utf8');
+for(const [file,name] of assetNames)html=html.replaceAll(`./assets/${file}`,`./assets/${name}`);
+await writeFile(join(output,'index.html'),html);
 const hashes={};
 for(const file of files) {
-  const bytes=await readFile(join(root,'web/src',file));
-  if(/chatgpt|codex|data-app-public|data-app-runtime|\.chatgpt\.site/i.test(bytes.toString())) throw new Error(`Dependência de plataforma encontrada em ${file}`);
-  await writeFile(join(output,'assets',file),bytes);
-  hashes[`assets/${file}`]=createHash('sha256').update(bytes).digest('hex');
+  let content=sources.get(file);
+  if(/chatgpt|codex|data-app-public|data-app-runtime|\.chatgpt\.site/i.test(content)) throw new Error(`Dependência de plataforma encontrada em ${file}`);
+  if(file.endsWith('.js'))for(const [dependency,name] of assetNames){
+    content=content.replaceAll(`'./${dependency}'`,`'./${name}'`).replaceAll(`"./${dependency}"`,`"./${name}"`);
+  }
+  const name=assetNames.get(file);
+  await writeFile(join(output,'assets',name),content);
+  hashes[`assets/${name}`]=createHash('sha256').update(content).digest('hex');
 }
 const bytes=JSON.stringify(data);
 await writeFile(join(output,'data/aquicultura.json'),bytes);
