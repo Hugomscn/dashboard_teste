@@ -14,9 +14,14 @@ Não edite `web/dist/`: essa pasta é gerada pelo build e ignorada pelo Git. Par
 
 ### Incorporação no Liferay DXP 7.4
 
+Dois endereços de incorporação estão disponíveis:
+
+- `?embed=production`: quadro compacto com indicadores, mapa, ranking, espécies e série temporal. O nível territorial fica na barra principal e a comparação fica junto ao CSV da série. O slider permanece acessível pelo teclado, sem o cabeçalho visual de período. A orientação de uso aparece abaixo como rodapé menor. Temáticos e tabelas adicionais ficam fora desse quadro; fontes abrem em outra aba.
+- `?embed=production-full`: apresentação incorporada preservada antes da compactação, com painéis temáticos, tabelas adicionais e navegação para Fontes e metodologia. Exemplo: <https://hugomscn.github.io/dashboard_teste/?embed=production-full>.
+
 O modo `?embed=production` usa fundo branco e tema claro, ocupa toda a largura disponível e dispensa o título externo do painel. Textos usam `1rem` e títulos de caixas `1.125rem`; a base respeita o tamanho padrão do navegador (normalmente 16 px). Rankings e tabelas mantêm suas rolagens internas. O documento conserva altura natural, sem esconder conteúdo para eliminar barras.
 
-O acesso a Fontes e metodologia oferece retorno à produção e preserva o recorte. A Visão geral continua disponível na versão completa, fora desse modo de incorporação.
+O acesso a Fontes e metodologia da apresentação preservada oferece retorno à produção e preserva o recorte. A Visão geral continua disponível na versão completa, fora desses modos de incorporação.
 
 Na página pública de teste da Embrapa, em 22/10/2026, o widget estava com o ajuste automático ativo. O script do portal atribuía ao iframe `document.body.scrollHeight` **da página do portal**, sem medir o documento externo. A inspeção encontrou 2.543 px de altura do iframe e 4.294 px de conteúdo da versão publicada, numa janela em que a largura interna era aproximadamente 683 px. Isso não confirma ajuste automático ao maior conteúdo do dashboard.
 

@@ -7,10 +7,10 @@ export function normalizeYearRange(start,end,years){
   if(lower===upper){const index=ordered.indexOf(upper);if(index>0)lower=ordered[index-1];else upper=ordered[1];}
   return {start:lower,end:upper};
 }
-export function yearRangeMarkup({start,end},years){
+export function yearRangeMarkup({start,end},years,{compact=false}={}){
   ({start,end}=normalizeYearRange(start,end,years));
   const min=Math.min(...years),max=Math.max(...years),length=max-min||1;
-  return `<div class="period-control"><div class="period-caption"><span>Período da série</span><output id="period-caption">${e(start)}–${e(end)}</output></div><div class="dual-range" data-min="${min}" data-max="${max}"><div class="dual-range-track"></div><div class="dual-range-fill" style="left:${(start-min)/length*100}%;width:${(end-start)/length*100}%"></div><input id="series-start" class="dual-range-input range-lower" type="range" min="${min}" max="${max}" step="1" value="${start}" aria-label="Ano inicial da série" aria-valuetext="${start}"><input id="series-end" class="dual-range-input range-upper" type="range" min="${min}" max="${max}" step="1" value="${end}" aria-label="Ano final da série" aria-valuetext="${end}"></div><div class="range-bounds"><span>${min}</span><span>${max}</span></div></div>`;
+  return `<div class="period-control"><div class="period-caption${compact?' sr-only':''}"><span>Período da série</span><output id="period-caption">${e(start)}–${e(end)}</output></div><div class="dual-range" data-min="${min}" data-max="${max}"><div class="dual-range-track"></div><div class="dual-range-fill" style="left:${(start-min)/length*100}%;width:${(end-start)/length*100}%"></div><input id="series-start" class="dual-range-input range-lower" type="range" min="${min}" max="${max}" step="1" value="${start}" aria-label="Ano inicial da série" aria-valuetext="${start}"><input id="series-end" class="dual-range-input range-upper" type="range" min="${min}" max="${max}" step="1" value="${end}" aria-label="Ano final da série" aria-valuetext="${end}"></div>${compact?'':`<div class="range-bounds"><span>${min}</span><span>${max}</span></div>`}</div>`;
 }
 export function bindYearRange(root,onCommit){
   const lower=root.querySelector('#series-start'),upper=root.querySelector('#series-end');if(!lower||!upper)return;

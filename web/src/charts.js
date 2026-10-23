@@ -54,7 +54,7 @@ export function drawPie(host,{rows,title,onSelect,selectedLabel}) {
   host.querySelectorAll('[data-index]').forEach(node=>{const row=positive[+node.dataset.index];mark(node,`${row.label} · ${percent(row.tonnes/total)} · ${number(row.tonnes)} t`,event=>onSelect(row,event));});
   host.querySelectorAll('[data-region-index]').forEach(node=>node.onclick=()=>onSelect(positive[+node.dataset.regionIndex]));
 }
-export function drawLine(host,{rows,series,title,metric='tonnes',onSelect,onRange}) {
+export function drawLine(host,{rows,series,title,metric='tonnes',onSelect,onRange,hideHint=false}) {
   const values=rows.flatMap(row=>series.map(s=>row[s.key])).filter(Number.isFinite);
   if(!values.length){host.innerHTML='<p class="empty">Não há observações para este período.</p>';return;}
   const portal=host.ownerDocument.documentElement.hasAttribute('data-embed');
@@ -73,7 +73,7 @@ export function drawLine(host,{rows,series,title,metric='tonnes',onSelect,onRang
     rows.forEach((row,i)=>{if(Number.isFinite(row[s.key]))body+=`<circle class="line-point mark${rows.length===1?' single-point':''}" data-motion-key="line:${seriesIndex}:${row.year}" data-row="${i}" data-series="${seriesIndex}" role="button" tabindex="0" aria-label="${e(row.year)}: ${e(s.label)} · ${e(format(row[s.key],metric))}. Abrir ações" cx="${x(i)}" cy="${y(row[s.key])}" r="5" fill="${color}"><title>${e(row.year)} · ${e(s.label)} · ${e(format(row[s.key],metric))}</title></circle>`;});
   });
   body+=`<rect class="brush-selection" x="0" y="${top}" width="0" height="${bottom-top}"/>`;
-  host.innerHTML=svgStart(width,height,title)+body+'</svg>'+(series.length>1?`<div class="chart-legend">${series.map((s,i)=>`<span><i class="legend-dot" style="background:${s.color??seriesColors[s.label]??palette[i%palette.length]}"></i>${e(s.label)}</span>`).join('')}</div>`:'')+'<p class="chart-hint">Arraste sobre a série para selecionar anos. Clique em um ponto para abrir ações.</p>';
+  host.innerHTML=svgStart(width,height,title)+body+'</svg>'+(series.length>1?`<div class="chart-legend">${series.map((s,i)=>`<span><i class="legend-dot" style="background:${s.color??seriesColors[s.label]??palette[i%palette.length]}"></i>${e(s.label)}</span>`).join('')}</div>`:'')+(hideHint?'':'<p class="chart-hint">Arraste sobre a série para selecionar anos. Clique em um ponto para abrir ações.</p>');
   bindTimeBrush(host,rows,{width,height,left,right,top,bottom},onRange);
   host.querySelectorAll('[data-row]').forEach(node=>{const row=rows[+node.dataset.row],s=series[+node.dataset.series];mark(node,`${row.year} · ${s.label} · ${format(row[s.key],metric)}`,event=>onSelect(row,s,event),true);});
   bindTimeCrosshair(host,{rows,positions:rows.map((_,i)=>x(i)),width,height,left,right,top,bottom,series:series.map((s,i)=>({...s,color:s.color??seriesColors[s.label]??palette[i%palette.length],format:value=>format(value,metric)})),axes:[{maximum:max,format:value=>(metric==='valueReais'?'R$ ':'')+compact(value)}]});
